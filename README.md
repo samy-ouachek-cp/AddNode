@@ -4,12 +4,11 @@ This readme will explain you how to run a full devchain node and participate in 
 #### Prerequisite
 We use eris/monax framework to run our blockchain, so tto be able to run a full node you will have to install these tools:
 
-[Install eris](https://monax.io/docs/tutorials/getting-started/index.html?redirect_from_eris=true) run all the step 1
+[Install eris](https://monax.io/docs/tutorials/getting-started/index.html?redirect_from_eris=true)(run all the step 1)
 
 If you not already have docker-machine and virtualbox you will need to install it:
 
 [Install docker-machine](https://docs.docker.com/machine/install-machine/)
-
 [Install virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
 ##1. Create a new docker machine on your host
@@ -18,7 +17,7 @@ docker-machine create --driver=virtualbox MYVALNODE
 
 ##2. Install all the monax/eris tools on it
 
-eris init --yes --machine MYVALNODE
+`eris init --yes --machine MYVALNODE`
 
 ##3. Create a configuration folder with needed files
 
@@ -29,11 +28,11 @@ To be able to sync your account with our blockchain you will need 3 files:
 `genesis.json`(in this repo):
 The basic account when the blockchain was created
 
-`config.toml` (in this repo):
+`config.toml`(in this repo):
 The configuration file of your node
 Open the config.toml file and modify `moniker = "YOURNODENAME"` by modifying YOURNODENAME by a new name.
 
-`priv_validator.json`:
+`priv_validator.json`
 When you have invested for the first time, you have received a priv_validator.json file, this files contains you have your adress, your public key and your private key.
 
 Copy these 3 files into your folder
