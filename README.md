@@ -1,7 +1,10 @@
 # AddNode
+This readme will explain you how to run a full devchain node and participate in the consensus by being a validator node.
+
+##### Prerequisite
 This repo explain how you can run a full node from Devfund blockchain.
 
-###1. Create a new docker machine on your host
+####1. Create a new docker machine on your host
 docker-machine create --driver=virtualbox MYVALNODE
 
 ###2. Install all the monax/eris tools on it
