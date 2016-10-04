@@ -6,25 +6,21 @@ We use eris/monax framework to run our blockchain, so tto be able to run a full 
 
 [Install eris](https://monax.io/docs/tutorials/getting-started/index.html?redirect_from_eris=true) (run all the step 1)
 
-If you not already have docker-machine and virtualbox you will need to install it:
-
-[Install docker-machine](https://docs.docker.com/machine/install-machine/) / 
-[Install virtualbox](https://www.virtualbox.org/wiki/Downloads)
+If you not already have docker-machine and virtualbox you will need to install it:  
+[Install docker-machine](https://docs.docker.com/machine/install-machine/)   
+[Install virtualbox](https://www.virtualbox.org/wiki/Downloads)  
 
 ##1. Create a new docker machine on your host
-docker-machine create --driver=virtualbox MYVALNODE
+docker-machine create --driver=virtualbox MYVALNODE  
 > Note: we use virtualbox driver for drive to run our docker-machine for the tuto but you can use what driver you want
 
-##2. Install all the monax/eris tools on it
-
+##2. Install all the monax/eris tools on it  
 `eris init --yes --machine MYVALNODE`
 
-##3. Create a configuration folder with needed files
-
+##3. Create a configuration folder with needed files  
 `mkdir configfolder`
 
-To be able to sync your account with our blockchain you will need 3 files:
-
+To be able to sync your account with our blockchain you will need 3 files:  
 `genesis.json`(in this repo):  
 The basic account when the blockchain was created
 
@@ -37,9 +33,7 @@ When you have invested for the first time, you have received a priv_validator.js
 
 Copy these 3 files into your folder
 
-
-
-Now you have to have a folder with this 3 files
+Now you have to have a folder with this 3 files  
 ```
 >ls configfolder/
 config.toml
@@ -52,10 +46,10 @@ priv_validator.json
 
 ##5. verify your node is running
 `docker-machine ls`
-copy the ip of your machine and paste this line in your browser
-your_ip:46657
-You will get all the endpoint available on your running node
-You can also watch logs with:
+copy the ip of your machine and paste this line in your browser  
+`your_ip:46657`  
+You will get all the endpoint available on your running node.  
+You can also watch logs with:  
 `eris chains logs --machine newvalnode devchain -f`
 
 ##6. Bond token to become validator
@@ -63,7 +57,6 @@ Now you have your own node, but you are not yet a validator, if you go on `your_
 ```
 eris chains exec devchain "mintx bond --amt 50000 --pubkey YOURPUBKEY --to YOURADRESS --chainID devchain --node-addr=chain:46657 --sign-addr=keys:4767 --sign --broadcast" --machine MYVALNODE
 ```
-
-
+Now if you refresh `your_ip:46657/list_validators` you will see your node appear.
 
 
