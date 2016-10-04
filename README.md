@@ -4,11 +4,11 @@ This readme will explain you how to run a full devchain node and participate in 
 #### Prerequisite
 We use eris/monax framework to run our blockchain, so tto be able to run a full node you will have to install these tools:
 
-[Install eris](https://monax.io/docs/tutorials/getting-started/index.html?redirect_from_eris=true)(run all the step 1)
+[Install eris](https://monax.io/docs/tutorials/getting-started/index.html?redirect_from_eris=true) (run all the step 1)
 
 If you not already have docker-machine and virtualbox you will need to install it:
 
-[Install docker-machine](https://docs.docker.com/machine/install-machine/)
+[Install docker-machine](https://docs.docker.com/machine/install-machine/) / 
 [Install virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
 ##1. Create a new docker machine on your host
