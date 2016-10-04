@@ -25,14 +25,14 @@ docker-machine create --driver=virtualbox MYVALNODE
 
 To be able to sync your account with our blockchain you will need 3 files:
 
-`genesis.json`(in this repo):
+`genesis.json`(in this repo):  
 The basic account when the blockchain was created
 
-`config.toml`(in this repo):
+`config.toml`(in this repo):  
 The configuration file of your node
 Open the config.toml file and modify `moniker = "YOURNODENAME"` by modifying YOURNODENAME by a new name.
 
-`priv_validator.json`
+`priv_validator.json`:  
 When you have invested for the first time, you have received a priv_validator.json file, this files contains you have your adress, your public key and your private key.
 
 Copy these 3 files into your folder
