@@ -51,10 +51,10 @@ You can also watch logs with:
 `eris chains logs --machine newvalnode devchain -f`
 
 ##6. Bond token to become validator
->NB: here the token we are bonded are just the token who allow you to be a validating node. Your devchain token are on a smart contract.  
+>NB: here the token we are bonded are just the token who allow you to have weight in validating block. Your real devchain token are on a smart contract.  
 
 Now you have your own node, but you are not yet a validator, if you go on `your_ip:46657/list_validators` you will see than your adress is not yet present. You need to bond your token to be allowed to be a validator.  
-For that you will need your adress and your public key, present on your priv_validator.json, and your TotalToken number, you can find on your account. There's no decimal on the blockchain so you will need to multiply by 100 You real token number to get the number hosted on your adress. Then run this command  
+For that you will need your adress and your public key, present on your priv_validator.json, and your Total Token number, you can find on your account. There's no decimal on the blockchain so you will need to multiply by 100 You real devchain token number to get the number of voting token TOTALTOKEN hosted on your adress. Then run this command:  
 
 ```
 eris chains exec devchain "mintx bond --amt TOTALTOKEN --pubkey YOURPUBKEY --to YOURADRESS --chainID devchain --node-addr=chain:46657 --sign-addr=keys:4767 --sign --broadcast" --machine MYVALNODE
