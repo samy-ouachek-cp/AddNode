@@ -1,4 +1,4 @@
-# Run a full validating node
+# Run a full devchain validating node
 This readme will explain you how to run a full devchain node and participate in the consensus by being a validator node.
 
 #### Prerequisite
