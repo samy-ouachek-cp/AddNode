@@ -1,0 +1,145 @@
+{
+  "chain_id": "devchain",
+  "accounts": [
+    {
+      "address": "88225172AD6F89D0C7CDB85D79DA400DFE42DCD7",
+      "amount": 9999999999,
+      "name": "devchain_developer_000",
+      "permissions": {
+        "base": {
+          "perms": 14430,
+          "set": 16383
+        },
+        "roles": []
+      }
+    },
+    {
+      "address": "6A89D7012D1E1B580BDF55527A583CFA307F47C7",
+      "amount": 9999999999,
+      "name": "devchain_participant_000",
+      "permissions": {
+        "base": {
+          "perms": 2118,
+          "set": 16383
+        },
+        "roles": []
+      }
+    },
+    {
+      "address": "6850DF1B27B135378A5138A4E876A38BB332F4FA",
+      "amount": 9999999999,
+      "name": "devchain_participant_001",
+      "permissions": {
+        "base": {
+          "perms": 2118,
+          "set": 16383
+        },
+        "roles": []
+      }
+    },
+    {
+      "address": "C5918F4BB5A9CFB6461EA6E394A8A52B3AA824B2",
+      "amount": 9999999999,
+      "name": "devchain_participant_002",
+      "permissions": {
+        "base": {
+          "perms": 2118,
+          "set": 16383
+        },
+        "roles": []
+      }
+    },
+    {
+      "address": "2A40638DB572C823AAA46F3EA7AD2C85B16FC931",
+      "amount": 9999999999,
+      "name": "devchain_root_000",
+      "permissions": {
+        "base": {
+          "perms": 16383,
+          "set": 16383
+        },
+        "roles": []
+      }
+    },
+    {
+      "address": "399AA972583E3567B5204264FF660091C6FE9FF0",
+      "amount": 9999999999,
+      "name": "devchain_validator_000",
+      "permissions": {
+        "base": {
+          "perms": 32,
+          "set": 16383
+        },
+        "roles": []
+      }
+    },
+    {
+      "address": "323F9690AF0C26274C26DE12CC1FFEA699ECD57F",
+      "amount": 9999999999,
+      "name": "devchain_validator_001",
+      "permissions": {
+        "base": {
+          "perms": 32,
+          "set": 16383
+        },
+        "roles": []
+      }
+    },
+    {
+      "address": "8469E2205D4BD579D387CD556753F026E26E9C68",
+      "amount": 9999999999,
+      "name": "devchain_validator_002",
+      "permissions": {
+        "base": {
+          "perms": 32,
+          "set": 16383
+        },
+        "roles": []
+      }
+    }
+  ],
+  "validators": [
+    {
+      "pub_key": [
+        1,
+        "D124C108F7F40600B514927D80E2CA39AFD7F47F0662E2591D2CB0C4BE8376D3"
+      ],
+      "name": "devchain_validator_000",
+      "amount": 9999999998,
+      "unbond_to": [
+        {
+          "address": "399AA972583E3567B5204264FF660091C6FE9FF0",
+          "amount": 9999999998
+        }
+      ]
+    },
+    {
+      "pub_key": [
+        1,
+        "6C744520ABDE6877B27A69D1165C96D5BBCA4222AE286AFF391419AEB392EF31"
+      ],
+      "name": "devchain_validator_001",
+      "amount": 9999999998,
+      "unbond_to": [
+        {
+          "address": "323F9690AF0C26274C26DE12CC1FFEA699ECD57F",
+          "amount": 9999999998
+        }
+      ]
+    },
+    {
+      "pub_key": [
+        1,
+        "8131A1E652BAAC95F13895E4ECA99B3B3365DCF6CAF2A7F7D91B7D9D4B555D7E"
+      ],
+      "name": "devchain_validator_002",
+      "amount": 9999999998,
+      "unbond_to": [
+        {
+          "address": "8469E2205D4BD579D387CD556753F026E26E9C68",
+          "amount": 9999999998
+        }
+      ]
+    }
+  ]
+}
